@@ -236,7 +236,7 @@ class Symetrix extends EventEmitter {
     /**
      * This command will return the controller position (value) associated with a specific controller number
      * @param {number} id - the control ID to get, between 1 and 10000
-     * @param {Promise}
+     * @return {Promise}
      */
     controlGet(id) {
         return new Promise((resolve, reject) => {
@@ -253,7 +253,7 @@ class Symetrix extends EventEmitter {
      * This command will return the controller position (value) of a specific range of consecutive controller numbers.
      * @param {number} id - the first control ID to get, between 1 and 10000
      * @param {number} size - the number of consecutive control IDs to get, between 1 and 256
-     * @param {Promise} cb
+     * @return {Promise}
      */
     async controlGetBlock(id, size) {
         return new Promise((resolve, reject) => {

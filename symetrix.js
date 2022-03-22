@@ -483,4 +483,7 @@ class Symetrix extends EventEmitter {
     // #endregion Pushing
 }
 
-module.exports = Symetrix;
+module.exports = {
+    Symetrix,
+    helpers: require('./helpers.js'),
+};
